@@ -1,0 +1,117 @@
+/* Center EVERYTHING on the screen */
+body,
+#root {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #262626; /* match your dark screen */
+  font-family: sans-serif;
+}
+
+/* Main todo card */
+.todo-container {
+  width: 450px;
+  padding: 25px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Title */
+.title {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1f1f1f;
+  text-align: left;
+}
+
+/* Input + Button row */
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Input field */
+.todo-input {
+  flex: 1;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  font-size: 16px;
+  background: #f4f4f4;
+  color: black;
+}
+
+.todo-input:focus {
+  outline: none;
+  border-color: #646cff;
+  box-shadow: 0 0 5px rgba(100, 108, 255, 0.6);
+}
+
+/* Add button */
+.add-btn {
+  padding: 12px 18px;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.add-btn:hover {
+  background: #5258d4;
+}
+
+/* Todo list */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual todo item */
+.todo-item {
+  background: #f5f5f5;
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left side (checkbox + text) */
+.todo-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Delete button */
+.delete-btn {
+  padding: 8px 10px;
+  background: #ff4a4a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  background: #c73535;
+}
+
+/* Completed todo */
+.strike {
+  text-decoration: line-through;
+  color: #999;
+}
